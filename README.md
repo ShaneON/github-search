@@ -14,3 +14,5 @@ It was just as follows 'Authorization': 'token foobar'.
 
 I tested the app mostly using 'rails' and my own github account name 'shaneon'.
 I used the chrome browser during dev and testing.
+
+to use visit '/org' and enter a name into the search bar
