@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('org', function() {
+    this.route('show', function() {
+      this.route('repos');
+    });
+  });
 });
 
 export default Router;
