@@ -7,7 +7,7 @@ export default Component.extend({
   tagName: '',
   repos: null,
   languageFilterSelectedOption: 'All',
-  languageFilterOptions: computed( function () {
+  languageFilterOptions: computed('repos.@each', function () {
     let languageSet = new Set();
     let repos = this.repos;
     repos.forEach((repo) => {
