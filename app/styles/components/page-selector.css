@@ -1,0 +1,10 @@
+.page-selector {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

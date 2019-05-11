@@ -1,0 +1,25 @@
+<div data-test-item onclick={{action "itemClicked"}} local-class="item">
+  <h1 data-test-repo-name local-class="title">
+    {{name}}
+  </h1>
+  <h2 data-test-language local-class="language">
+    {{language}}
+  </h2>
+  <a data-test-link local-class="link" href={{repo.link}}>
+    Github Link
+  </a>
+  {{#if shouldShowBranches}}
+    <h3 local-class="branch-title">
+      Branches:
+    </h3>
+    {{#each branches as |branch|}}
+      <h4 data-test-branch-name local-class="branch-name">
+        {{branch.name}}
+      </h4>
+    {{/each}}
+  {{else}}
+    <h3 data-test-num-branches local-class="branch-title">
+      Branches: {{branches.length}}
+    </h3>
+  {{/if}}
+</div>

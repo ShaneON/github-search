@@ -8,7 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('org', function() {
-    this.route('show', function() {
+    this.route('show', { path: '/:org_id'}, function() {
       this.route('repos');
     });
   });

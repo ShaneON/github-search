@@ -1,1 +1,7 @@
-{{outlet}}
+{{page-header}}
+<div local-class="body">
+  <div local-class="content">
+    {{search-bar searchClicked=(action send "searchOrg")}}
+  </div>
+  {{outlet}}
+</div>

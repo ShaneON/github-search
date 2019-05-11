@@ -1,1 +1,4 @@
-{{outlet}}
+{{repo-container repos=model}}
+{{page-selector
+  nextClicked=(action send "loadNextPage")
+  previousClicked=(action send "loadPreviousPage")}}

@@ -1,0 +1,9 @@
+{{selector-dropdown
+  options=languageFilterOptions
+  option=languageFilterSelectedOption
+  languageSelected=(action "languageSelected")}}
+<div local-class="container">
+  {{#each filter as |repo|}}
+    {{repo-item repo=repo}}
+  {{/each}}
+</div>

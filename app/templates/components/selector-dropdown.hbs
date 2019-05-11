@@ -1,0 +1,7 @@
+<div local-class="selector">
+  {{#power-select class=(local-class "select")
+    options=options
+    onchange=(action languageSelected) as |option|}}
+    {{option}}
+  {{/power-select}}
+</div>

@@ -1,0 +1,6 @@
+<div local-class="search-bar">
+  {{input data-test-input class=(local-class "input") value=orgName}}
+  <button data-test-search local-class="button" onclick={{action searchClicked orgName}}>
+    Search
+  </button>
+</div>
