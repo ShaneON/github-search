@@ -13,3 +13,4 @@ I removed my testing auth token from the headers in the adapters.
 It was just as follows 'Authorization': 'token foobar'.
 
 I tested the app mostly using 'rails' and my own github account name 'shaneon'.
+I used the chrome browser during dev and testing.
